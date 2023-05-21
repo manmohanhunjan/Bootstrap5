@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <script
+      src="https://kit.fontawesome.com/051fd17338.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js" defer></script>
+    <style>
+      .icon-container {
+        margin-left: 45rem;
+      }
+
+      .icon-container i {
+        padding: 0 10px;
+      }
+
+      .thumbnail-bgImg {
+        background-image: url("/thumbnail.jpg");
+        background-size: cover;
+      }
+
+      .bg-image {
+        background-image: url("https://images.unsplash.com/photo-1684095756709-941bea7f2258?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDd8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60");
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title"></h4>
+            <button  class="btn-close videoStop" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="col-md">
+              <video src="/movie.mp3" width="400px" height="240px"></video>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button class="btn btn-danger videoStop" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- black band -->
+    <div class="container-md-fluid text-bg-dark pt-3">
+      <div class="row">
+        <div class="col-md-2">
+          <p class="ms-2">support@support.com</p>
+        </div>
+        <div class="col-md-3">
+          <p class="ms-3">
+            <i class="fa-solid fa-phone" style="color: #ffffff"></i>
+            +917897801187
+          </p>
+        </div>
+        <div class="col-md-2 icon-container">
+          <p>
+            <a href="https://open.spotify.com/"
+              ><i
+                class="fa-brands fa-spotify fa-bounce"
+                style="color: #13dc04"
+              ></i
+            ></a>
+
+            <a href="https://www.reddit.com/"
+              ><i class="fa-brands fa-reddit fa-beat" style="color: #ff7b00"></i
+            ></a>
+            <a href="https://www.facebook.com/"
+              ><i
+                class="fa-brands fa-facebook fa-flip"
+                style="color: #4c70ae"
+              ></i
+            ></a>
+            <a href="https://www.youtube.com/"
+              ><i
+                class="fa-brands fa-youtube fa-flip"
+                style="color: #f70202"
+              ></i
+            ></a>
+            <a href="https://twitter.com/home"
+              ><i
+                class="fa-brands fa-twitter fa-bounce"
+                style="color: #75a8ff"
+              ></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="container-md-fluid text-bg-primary pt-md-2 pb-md-2">
+      <div class="row mx-md-5">
+        <div class="col-md-1" style="margin-left: 11rem">
+          <button class="btn btn-light mt-4 btn-lg">Home</button>
+        </div>
+        <div class="col-md-1">
+          <button class="btn btn-light mt-4 btn-lg">Contact</button>
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-light mt-4 btn-lg">Our Services</button>
+        </div>
+        <div class="col-md-2">
+          <img
+            src="https://th.bing.com/th/id/OIG.EfDY11BaRHHMyhTA.JnW?pid=ImgGn"
+            alt=""
+            class="img rounded-circle"
+            height="100px"
+            width="100px"
+          />
+        </div>
+        <div class="col-md-1">
+          <button class="btn btn-light mt-4 btn-lg">Themes</button>
+        </div>
+        <div class="col-md-1">
+          <button class="btn btn-light mt-4 btn-lg">Blogging</button>
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-light mt-4 btn-lg">Admin Panel</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1st Container -->
+    <div class="container-md-fluid pt-md-3 pb-md-3 border bg-image">
+      <div class="row mx-md-5">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title text-center">
+                <h1>Transforming Ideas into Powerful Software Solutions</h1>
+              </div>
+              <div class="card-text text-center">
+                <p>
+                  Unlock the potential of your ideas with our software
+                  development expertise. We specialize in transforming your
+                  concepts into robust and impactful software solutions. Our
+                  team of skilled developers and innovators work closely with
+                  you to understand your unique requirements, ensuring that the
+                  final product aligns perfectly with your vision. Experience
+                  the power of technology as we bring your ideas to life and
+                  empower your business to thrive in the digital age. final
+                  product aligns perfectly with your vision. Experience the
+                  power of technology as we bring your ideas to life and empower
+                  your business to thrive in the digital age. final product
+                  aligns perfectly with your vision. Experience the power of
+                  technology as we bring your ideas to life and empower your
+                  business to thrive in the digital age. final product aligns
+                  perfectly with your vision. Experience the power of technology
+                  as we bring your ideas to life and empower your business to
+                  thrive in the digital age.
+                </p>
+              </div>
+              <div class="card-link">
+                <a href="#" class="btn btn-outline-primary">Join Us</a>
+                <a href="#" class="btn btn-outline-primary ms-2"
+                  >More Info...</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-center thumbnail-bgImg">
+          <!-- thumbnail with image and a button in centre -->
+          <div class="thumbnail-bgImg"></div>
+          <button
+            id="modalBtn"
+            type="button"
+            class="btn btn-light btn-lg"
+            style="margin-top: 10rem"
+            data-bs-toggle="modal"
+            data-bs-target="#myModal"
+          >
+            <i
+              class="fa-brands fa-xl fa-youtube fa-flip"
+              style="color: #f70202"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- container 2 -->
+    <div class="container-md pt-md-3 pb-md-3 border">
+      <div class="row mt-2">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-top justify-content-center d-flex mb-3 mt-3">
+                <i
+                  class="fa-brands fa-xl fa-discord"
+                  style="color: #80abf4"
+                ></i>
+              </div>
+              <div class="card-title text-center h4">
+                Custom Software Development:
+              </div>
+              <div class="card-text text-center">
+                <p>
+                  Experience the power of custom software development tailored
+                  to your specific business needs. Our team of experts will
+                  collaborate closely with you to understand your requirements
+                  and design a solution that fits your unique challenges. With
+                  our custom software solutions, you can streamline processes,
+                  enhance efficiency, and unlock new growth opportunities. From
+                  concept to deployment, we are committed to delivering
+                  high-quality, scalable, and secure software that empowers your
+                  business for success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-top justify-content-center d-flex mb-3 mt-3">
+                <i class="fa-solid fa-xl fa-bomb" style="color: #121212"></i>
+              </div>
+              <div class="card-title text-center h4">
+                Web and Mobile App Development:
+              </div>
+              <div class="card-text text-center">
+                <p>
+                  Elevate your digital presence with our top-notch web and
+                  mobile app development services. Our skilled team of
+                  developers specializes in crafting user-friendly and visually
+                  stunning applications that engage and delight your target
+                  audience. From responsive web designs to feature-rich mobile
+                  apps, we combine cutting-edge technologies with intuitive user
+                  interfaces to deliver seamless experiences across devices.
+                  Whether you need a simple website or a complex enterprise
+                  application, we have the expertise to bring your vision to
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-top justify-content-center d-flex mb-3 mt-3">
+                <i
+                  class="fa-solid fa-xl fa-camera-retro"
+                  style="color: #fbd074"
+                ></i>
+              </div>
+              <div class="card-title text-center h4">UI/UX Design</div>
+              <div class="card-text text-center">
+                <p>
+                  At our software development company, we prioritize the art of
+                  creating exceptional user experiences. Our UI/UX design
+                  services focus on seamlessly blending aesthetics and
+                  functionality to deliver intuitive and visually appealing
+                  interfaces. Our talented designers combine user-centered
+                  design principles with the latest trends to ensure that every
+                  interaction with your software is engaging and memorable. From
+                  wire-framing and prototyping to crafting pixel-perfect
+                  designs, we meticulously craft user interfaces that elevate
+                  usability, enhance user satisfaction, and leave a lasting
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-top justify-content-center d-flex mb-3 mt-3">
+                <i class="fa-solid fa-xl fa-cloud"></i>
+              </div>
+              <div class="card-title text-center h4">Cloud Solutions:</div>
+              <div class="card-text text-center">
+                <p>
+                  Unlock the power of the cloud with our comprehensive cloud
+                  solutions. We offer scalable and secure cloud-based services
+                  that enable businesses to store, manage, and access data and
+                  applications effortlessly. Our team of cloud experts will
+                  guide you through the entire process, from designing and
+                  deploying cloud infrastructure to migrating and optimizing
+                  your existing systems. Whether you need to leverage the
+                  flexibility of Infrastructure as a Service (IaaS), the
+                  efficiency of Platform as a Service (PaaS), or the convenience
+                  of Software as a Service (SaaS), we tailor our cloud solutions
+                  to meet your specific requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-top justify-content-center d-flex mb-3 mt-3">
+                <i
+                  class="fa-brands fa-xl fa-yandex-international"
+                  style="color: #61028d"
+                ></i>
+              </div>
+              <div class="card-title text-center h4">Integration Services:</div>
+              <div class="card-text text-center">
+                <p>
+                  Simplify and streamline your business operations with our
+                  seamless integration services. Our team of experts specializes
+                  in integrating various systems, applications, and data
+                  sources, enabling smooth communication and data flow across
+                  your entire IT landscape. Whether you need to connect legacy
+                  systems with modern software, sync data between different
+                  platforms, or enable real-time information exchange, we have
+                  the expertise to make it happen. Our integration solutions
+                  ensure data accuracy, process efficiency, and improved
+                  decision-making capabilities. Let us handle the complexity of
+                  system integration so you can focus on driving your
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-top justify-content-center d-flex mb-3 mt-3">
+                <i
+                  class="fa-solid fa-xl fa-flask-vial"
+                  style="color: #8af49c"
+                ></i>
+              </div>
+              <div class="card-title text-center h4">
+                Quality Assurance and Testing:
+              </div>
+              <div class="card-text text-center">
+                <p>
+                  We prioritize delivering software solutions of the highest
+                  quality by employing rigorous quality assurance and testing
+                  practices. Our dedicated quality assurance team conducts
+                  comprehensive testing to identify and resolve any bugs,
+                  glitches, or performance issues. We utilize industry-standard
+                  testing methodologies to ensure the reliability,
+                  functionality, and security of your software. From unit
+                  testing and integration testing to user acceptance testing, we
+                  leave no stone unturned in ensuring a smooth and error-free
+                  user experience. Our quality assurance and testing services
+                  are designed to help you deliver a superior product that
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- form+aboutUs -->
+    <div class="container-md-fluid pt-md-3 pb-md-3 border">
+      <div class="row mx-md-5">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body text-bg-light">
+              <div class="card-title text-center h4">Contact Us</div>
+              <div class="card-text">
+                <form action="">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="3"
+                      placeholder="Enter your message"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body text-bg-light">
+              <div class="card-title text-center h4">About Us</div>
+              <div class="card-text text-center">
+                <p>
+                  We are a software development company that specializes in
+                  crafting custom software solutions for businesses of all
+                  sizes. Our team of experts will work closely with you to
+                  understand your unique challenges and design a solution that
+                  aligns with your goals. We combine cutting-edge technologies
+                  with proven methodologies to deliver high-quality, scalable,
+                  and secure software that empowers your business for success.
+                  Our services include custom software development, web and
+                  mobile app development, UI/UX design, cloud solutions,
+                  integration services, and quality assurance and testing. We
+                  are committed to delivering exceptional software solutions
+                  that drive your business forward. Contact us today to learn
+                  more about our services and how we can help you achieve your
+                  software development goals. Thank you for visiting our
+                  website. We look forward to hearing from you. software
+                  development goals. Thank you for visiting our website. We look
+                  forward to hearing from you. software development goals. Thank
+                  you for visiting our website. We look forward to hearing from
+                  you. software development goals. Thank you for visiting our
+                  website. We look forward to hearing from you. software
+                  development goals. Thank you
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <!-- 3cols -->
+    <div class="container-md-fluid pt-md-3 pb-md-3 bg-dark">
+      <div class="row mx-md-5">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title text-center h4">Our Services</div>
+              <div class="card-text">
+                <p>
+                  Custom Software Development Web and Mobile App Development
+                  UI/UX Design Cloud Solutions Integration Services Quality
+                  Assurance and Testing Custom Software Development Web and
+                  Mobile App Development UI/UX.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title text-center h4">Contact Us</div>
+              <div class="card-text">
+                <p>1234 Main Street, Suite 100, San Francisco, CA 94110</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: mail@mail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.2948691773904!2d79.92590767494515!3d23.15943571120761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981af692f34774d%3A0xc503715a17ad0b26!2sInocrypt%20Infosoft%20%7C%20best%20software%20company%20in%20Jabalpur%20%7C%20best%20programming%20institute%20in%20Jabalpur!5e0!3m2!1sen!2sin!4v1684679489517!5m2!1sen!2sin"
+                width="430"
+                height="150"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FvfD7exU8vfYB2LOx+GjD6j5MRBDmWAWYRPgaOYfYz+9LxRLtlJ85U7C1W6faScR"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
