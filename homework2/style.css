@@ -1,0 +1,45 @@
+.sideBarBG {
+    background-color: #061E2C;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+
+}
+.sideBarBgSubheadingContent {
+    background-color: #061E2C;
+    padding-left: 1rem;
+    color: #949FB3;
+}
+
+.sideBarSubHeading {
+    color: #627182;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+    color: #949FB3;
+}
+a:hover {
+    text-decoration: none;
+    color: #fbfcfe;
+}
+.sideBarItemsFont {
+    font-family: sans-serif;
+    font-size: small;
+}
+.downArrowMargin{
+  margin-left: 6rem;
+}
+.collapseBgColor{
+    background-color: #003F40;
+}
+/* .collapseBtnColor{
+    background-color: #003F40;
+    color: #fbfcfe;
+    
+} */
+/* .collapseBtnColor{
+    border-radius: 0.2rem;
+    padding: 1.2rem 1rem 0rem;
+    margin-left: -0.8rem;
+    text-align: center;
+} */
