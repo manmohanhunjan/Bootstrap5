@@ -14,11 +14,11 @@
     color: #627182;
     font-size: 12px;
 }
-a {
+a,i {
     text-decoration: none;
     color: #949FB3;
 }
-a:hover {
+a:hover,i:hover {
     text-decoration: none;
     color: #fbfcfe;
 }
