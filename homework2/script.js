@@ -39,3 +39,22 @@ sideBarActive.addEventListener('click', () => {
 
     }
 );
+
+// Chart
+document.addEventListener("DOMContentLoaded", function(event) {
+  var options = {
+    chart: {
+      type: 'line',
+    },
+    series: [{
+      name: 'Sales',
+      data: [30, 40, 35, 50, 49, 60, 70, 91, 125]
+    }],
+    xaxis: {
+      categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep']
+    }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#chartContainer"), options);
+  chart.render();
+});
