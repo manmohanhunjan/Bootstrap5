@@ -32,12 +32,29 @@ collapseBtns.forEach((btn, index) => {
 });
 
 const sideBarActiveContainer = document.querySelector('#sideBarActiveContainer');
+const sideBarActiveContainer1 = document.querySelector('#sideBarActiveContainer1');
+
 const sideBarActive = document.querySelector('#sideBarActive');
+const sideBarActive1 = document.querySelector('#sideBarActive1');
 
 sideBarActive.addEventListener('click', () => {
     sideBarActiveContainer.classList.toggle('d-none');
+  sideBarActiveContainer1.classList.toggle('d-none');
+  sideBarActive1.classList.toggle('d-none');
+
+
 
     }
+);
+
+sideBarActive1.addEventListener('click', () => {
+  sideBarActiveContainer.classList.toggle('d-none');
+  sideBarActiveContainer1.classList.toggle('d-none');
+  sideBarActive1.classList.toggle('d-none');
+
+
+
+  }
 );
 
 // Chart
