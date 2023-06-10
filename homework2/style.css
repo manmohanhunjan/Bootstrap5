@@ -191,3 +191,57 @@ a:hover,i:hover {
     max-width: 650px;
     margin: 35px auto;
 }
+
+
+/* activity feed */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+.activity-feed {
+  padding: 15px;
+  margin-left: 15px;
+}
+.activity-feed .feed-item {
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  border-left: 4px solid #e4e8eb;
+}
+.activity-feed .feed-item:last-child {
+  padding-bottom: 0;
+}
+.activity-feed .feed-item:nth-child(1) {
+    border-color: #3980c0;
+}
+.activity-feed .feed-item:last-child {
+  border-color: transparent;
+}
+.activity-feed .feed-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -9px;
+  width: 15px;
+  height: 15px;
+  border-radius: 12px;
+  background: #f8f9f9;
+  border: 1px solid #3980c0;
+}
+/* first child */
+.activity-feed .feed-item:nth-child(1):after {
+  background: #3980c0;
+  border: 1px solid #3980c0;
+}
+.activity-feed .feed-item .date {
+  position: relative;
+  top: -5px;
+  color: #8c96a3;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.activity-feed .feed-item .text {
+  position: relative;
+  top: -3px;
+}
