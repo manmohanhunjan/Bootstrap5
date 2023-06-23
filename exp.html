@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .container {
+        width: 30%;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <form>
+                    <div class="form-group">
+                        <label for="usr">ID:</label>
+                        <input type="number" class="form-control" id="proid">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Title:</label>
+                        <input type="text" class="form-control" id="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Discribtion:</label>
+                        <input type="text" class="form-control" id="disc">
+                    </div>
+                    <div class="form-group">
+                        <button id="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+            <div id="itemadded" class="col-sm-8">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+        
+        let itemadded = {};
+        let btn = document.querySelector('#submit');
+
+        btn.addEventListener('click', submitItem);
+
+        function submitItem(event) {
+            event.preventDefault();
+
+            let id = +document.getElementById('proid').value;
+            let proname = document.getElementById('title').value;
+            let proDis = document.getElementById('disc').value;
+
+            itemadded = {
+                id: id,
+                Title: proname,
+                Description: proDis
+            };
+            
+
+            let convertPost = JSON.stringify(itemadded);
+            const url = "https://jsonplaceholder.typicode.com/posts"
+            let xhr = new XMLHttpRequest();
+            xhr.open('POST', url, true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+
+            xhr.onload = function () {
+                if (xhr.status === 201 && xhr.readyState === 4) {
+                    console.log(xhr.responseText);
+                }
+            }
+            xhr.send(convertPost);
+        };
+
+
+    </script>
+</body>
+
+</html>
